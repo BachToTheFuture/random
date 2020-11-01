@@ -14,7 +14,7 @@ $('#next').click(() => {
 })
 
 $(document).ready(function() {
-    Papa.parse('trumptweets.csv', {
+    Papa.parse('https://raw.githubusercontent.com/BachToTheFuture/random/main/trumptweets.csv', {
       download: true,
     	complete: function(results) {
             $('#loading').hide();

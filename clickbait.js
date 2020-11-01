@@ -29,7 +29,7 @@ $('#next').click(() => {
 // Wait until the document is finished loading!
 $(document).ready(function() {
     // PapaParse is able to read local text files
-    Papa.parse('clickbait.txt', {
+    Papa.parse('https://raw.githubusercontent.com/BachToTheFuture/random/main/clickbait.txt', {
         download: true,
     	complete: function(results) {
     	    // Only get the first row of the csv file
