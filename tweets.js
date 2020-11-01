@@ -14,7 +14,7 @@ $('#next').click(() => {
 })
 
 $(document).ready(function() {
-    Papa.parse('/trumptweets.csv', {
+    Papa.parse('trumptweets.csv', {
       download: true,
     	complete: function(results) {
             $('#loading').hide();

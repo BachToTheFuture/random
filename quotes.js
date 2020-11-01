@@ -20,7 +20,7 @@ $('#next').click(() => {
 
 // Wait until the document is finished loading!
 $(document).ready(function() {
-    Papa.parse('/quotes.csv', {
+    Papa.parse('quotes.csv', {
       download: true,
     	complete: function(results) {
     	    $('#loading').hide();
