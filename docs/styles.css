@@ -1,0 +1,193 @@
+
+/* GENERAL STYLING */
+html,
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #bfdaff;
+}
+
+h1 {
+  font-weight:600;
+  font-size:1.5rem;
+}
+
+h2 {
+  font-weight:600;
+  font-size:1.6rem;
+}
+
+b {
+  font-weight:800;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  font-size:15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+/* CENTERED CARD AND BODY CONTENT */
+#content-body {
+  margin-left: auto;
+  margin-right: auto;
+  top:40%;
+  width: 70%;
+  max-height:80vh;
+}
+
+.content-container {
+  display: table;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content-helper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.card {
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.58);
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.58);
+  border-radius:0px;
+  border: 3px black solid;
+}
+
+.main-content {
+    padding-left: 8px;
+    padding:10px;
+}
+
+/* THE NAVBAR */
+.navbar {
+  background: none !important;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  margin-left:-8px;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+.active {
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.btn-primary {
+  font-weight:600;
+  font-size:1rem;
+  background:#bfdaff;
+  border-radius:0px;
+  border:2px black solid;
+  color: black;
+  transition: all 0.2s ease;
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.58);
+  text-align: left;
+  margin-right:10px;
+}
+
+.btn-primary:hover,
+.btn-primary:active:focus {
+  outline: 0 none;
+  border:2px black solid;
+  color: black;
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.58);
+}
+
+/* ARTICLE IMAGES */
+#article-img-wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+#article-img {
+  min-height: 100%;
+}
+
+/*
+THE LOADING WHEEL
+======================================================
+https://www.w3schools.com/howto/howto_css_loader.asp
+*/
+#loading {
+  margin-left: auto;
+  margin-right: auto;
+  top:40%;
+  width: 70%;
+  max-height:80vh;
+  text-align: center;
+}
+
+.loader {
+  margin: 0 auto;
+  border: 10px solid transparent;
+  border-top: 10px solid #333; /* dark gray */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);}
+}
+
+/* PAGE THEMES */
+#home {
+  background-color: #b0ffe7;
+}
+#home .btn-primary {
+  background-color: #b0ffe7;
+}
+#clickbait-page {
+  background-color: #bfdaff;
+}
+#clickbait-page .btn-primary {
+  background-color: #bfdaff;
+}
+#tweets-page {
+  background-color: #ff9d96;
+}
+#tweets-page .btn-primary {
+  background-color: #ff9d96;
+}
+#quotes-page {
+  background-color: #b1fa87;
+}
+#quotes-page h1 {
+  font-size: 1.3rem !important;
+}
+#quotes-page .btn-primary {
+  background-color: #b1fa87;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 700px) {
+  #article-img-wrapper {
+    display: none;
+  }
+  .navbar {
+    margin-left:8px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #tweets-page, #jokes-page .navbar {
+    margin-left:8px !important;
+  }
+}
